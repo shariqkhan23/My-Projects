@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <script src="./js/bootstrap.bundle.min.js">
+        </script>
+    
+        <style>
+            span{
+                color: red;
+            }
+            h2{
+                font-family: 'Shadows Into Light', cursive;
+            }
+    
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h6 class="text-center">BOOK A TABLE</h6>
+            <h2 class="text-center">BOOK <span>YOUR STAY</span> WITH US</h2>
+            <div class="col-md-3 p-0"> <!-- Add "p-0" class to remove padding -->
+                <img src="./reservation.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-9 pt-4 bg-light"> <!-- Add "bg-light" class for background color -->
+                <form action="" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="fname" placeholder="Your Name" required><br>
+                            <div class="invalid-feedback">Please Enter Your Name</div>
+                        </div>
+            
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="email" placeholder="Your Email" required><br>
+                            <div class="invalid-feedback">Please Enter Your Email</div>
+                        </div>
+            
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="phone" placeholder="Your Phone" required><br>
+                            <div class="invalid-feedback">Please Enter Your phone-no</div>
+                        </div>
+            
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Date" required><br>
+                            <div class="invalid-feedback">Please Enter Date</div>
+                        </div>
+            
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Time" required><br>
+                            <div class="invalid-feedback">Please Enter Time</div>
+                        </div>
+            
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="3" required><br>
+                            <div class="invalid-feedback">Please Enter Number</div>
+            
+                           
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="Massage" id="Massage" cols="20" rows="3" class="form-control"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+            <button class="btn btn-danger " style="border-radius: 20px; margin-top: 20px;">Book a table</button>
+            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Move the JavaScript code to the end of the body -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict'
+
+          // Fetch the form we want to apply custom Bootstrap validation styles to
+          var form = document.querySelector('.needs-validation')
+
+          // Prevent submission and handle form validation on submit
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })()
+    </script>
+</body>
+</html>
